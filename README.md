@@ -33,8 +33,8 @@ cookie和session的区别
  *Tomcat中Session的默认超时时间为20分钟。通过setMaxInactiveInterval(int seconds)修改超时时间。
  *可以修改web.xml改变Session的默认超时时间。例如修改为60分钟：
 
- *<session-config>
- *   <session-timeout>60</session-timeout>      <!-- 单位：分钟 -->
- * </session-config>
- * 注意：<session-timeout>参数的单位为分钟，而setMaxInactiveInterval(int s)单位为秒
+ <session-config>
+   <session-timeout>60</session-timeout>      <!-- 单位：分钟 -->
+ </session-config>
+ 注意：<session-timeout>参数的单位为分钟，而setMaxInactiveInterval(int s)单位为秒
  */
